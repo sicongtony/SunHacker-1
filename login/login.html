@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Landing Page - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+    <!-- Jquery core js -->
+    <link rel="stylesheet" type="text/css" href="vendor/jquery/jquery-3.3.1.js">
+
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+    <!-- <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCdzlQqW2LotCQYz_nNabvm6ruWWZJI5cE",
+        authDomain: "sunhacker-22d59.firebaseapp.com",
+        databaseURL: "https://sunhacker-22d59.firebaseio.com",
+        projectId: "sunhacker-22d59",
+        storageBucket: "sunhacker-22d59.appspot.com",
+        messagingSenderId: "602951114141"
+      };
+      firebase.initializeApp(config);
+    </script> -->
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <!-- <nav class="navbar navbar-dark bg-dark static-top">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Information</a>
+          <div class="dropdown-menu" aria-lablledby="navbarDropdown">
+            <a class="dropdown-item" href="#">UV-index</a>
+            <a class="dropdown-item" href="#">UV-dose</a>
+            <a class="dropdown-item" href="#">skin cancer</a>
+          </div>
+          </li>
+          <li class="nav-item active">
+          <a class="btn btn-primary" href="#">Sign In</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+    <!-- Login and register -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a href="#" class="navbar-brand">SunHacker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              UV Knowledge
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a href="#" class="dropdown-item">UV index</a>
+              <a href="#" class="dropdown-item">Skin Cancer</a>
+              <a href="#" class="dropdown-item">How to sunscreen</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a href="#" class="nav-link">UV planner</a>
+          </li>
+        </ul>
+        <ul class="nar navbar-nav navbar-right">
+          <li class="nav-item active"><a href="#" class="nav-link">Login</a></li>
+          <li class="nav-item active"><a href="#" class="nav-link">Register</a></li>
+        </ul>      
+      </div>
+    </nav>
+
+    <!-- Login -->
+    <div class="container">
+      <form>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">Email</span>
+          <input type="text" class="form-control" aria-describedby="basic-addon1" name="username">
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon2">Password</span>
+          <input type="password" name="password" class="form-control" data-toggle="password">
+        </div>
+
+        <div class="form-group">
+          <button class="btn btn-success">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="#">About</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Contact</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fa fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fa fa-twitter fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-instagram fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+
+    
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

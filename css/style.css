@@ -52,3 +52,12 @@ figure{
 	-moz-box-shadow: -2px 6px 26px 11px rgba(0,0,0,0.75);
 	box-shadow: -2px 6px 26px 11px rgba(0,0,0,0.75);
 }
+
+.dropdown:hover>.dropdown-menu{
+	display: block;
+}
+
+#mainNav.navbar-shrink{
+	border-color: rgba(34,34,34,0.1);
+	background-color: white;
+}

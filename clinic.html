@@ -28,6 +28,7 @@
     <link href="css/new-age.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/clinic.css">
 
   </head>
 
@@ -65,19 +66,26 @@
       </div>
     </nav>
 
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100 justify-content-center">
-          <div class="col-lg-6 my-auto">
-            <div class="header-content mx-auto">
-              <h1 class="mb-5">Welcome to Melbourne, UV index is <span id="uv-index"></span>,have a goood day!</h1>
-              <a href="riskassess.html" class="btn btn-outline btn-xl js-scroll-trigger">Start assessment</a>
-            </div>
-          </div>
-      </div>
-    </header>
 
+    <section class="map">
+      <div class="row h-100">        
+      <div class="card offset-lg-1 pre-scrollable" style="width: 18rem;">
+        <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Hospital</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Hospital</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Hospital</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Hospital</a>
+    </div>
+      </div>
+      <div id="map" class="h-100 col-lg-7"></div>
+      </div>
+      </div>
+    </section>
     
+    
+    
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdzlQqW2LotCQYz_nNabvm6ruWWZJI5cE&callback=initMap"
+    async defer></script> -->
 
     <!-- <footer>
       <div class="container">
@@ -151,8 +159,11 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/new-age.min.js"></script>
-    <script src="js/index.js"></script>
 
+    <script src="js/clinic.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdzlQqW2LotCQYz_nNabvm6ruWWZJI5cE&callback=initMap"
+    async defer></script>
   </body>
 
 </html>

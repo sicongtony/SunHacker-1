@@ -23,6 +23,6 @@ function xmlParser(xml){
 		else{
 			attention = ",please stay in house avoiding sunburn";
 		}
-		$("#uv-index").append(index, attention);
+		$("#uv-index").append(index," now", attention);
 	})
 }

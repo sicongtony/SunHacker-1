@@ -140,9 +140,11 @@ section h2 {
   #mainNav .navbar-nav > li > a:focus:hover {
     color: #fdcc52;
   }
+
+  /*navbar color*/
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.1);
-    background-color: white;
+    background-color: #e4e2c6;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #222222;

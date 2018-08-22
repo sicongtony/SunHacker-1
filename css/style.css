@@ -9,7 +9,7 @@
 }
 
 .navbar:hover {
-	background: white none repeat scroll 0 0 !important;
+	background: #e4e2c6 none repeat scroll 0 0 !important;
 	border-color: rgba(34, 34, 34, 0.1);
 }
 
@@ -21,6 +21,9 @@
 background:transparent !important;
 }
 
+.dropdown .dropdown-menu{
+	background-color: #e4e2c6;
+}
 .dropdown .dropdown-item:hover{
 	background-color: #cccaca;
 }

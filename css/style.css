@@ -11,10 +11,16 @@
 .navbar:hover {
 	background: white none repeat scroll 0 0 !important;
 	border-color: rgba(34, 34, 34, 0.1);
-  }
-.navbar:hover > li > a{
-	color:#222222;
 }
- .navbar-default *:hover{
- background:transparent !important;
- }
+
+.navbar:hover .nav-brand{
+	color:black;
+}
+
+.navbar-default *:hover{
+background:transparent !important;
+}
+
+.dropdown .dropdown-item:hover{
+	background-color: #cccaca;
+}

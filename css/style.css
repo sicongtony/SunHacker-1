@@ -11,6 +11,9 @@
 .navbar:hover {
 	background: #e4e2c6 none repeat scroll 0 0 !important;
 	border-color: rgba(34, 34, 34, 0.1);
+	-webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
 .navbar:hover .nav-brand{
@@ -23,6 +26,9 @@ background:transparent !important;
 
 .dropdown .dropdown-menu{
 	background-color: #e4e2c6;
+	-webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
 }
 .dropdown .dropdown-item:hover{
 	background-color: #cccaca;

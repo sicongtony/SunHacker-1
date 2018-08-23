@@ -1,6 +1,6 @@
 window.onload = function(){
 	initMap()
-	initHospital()
+	// initHospital()
 }
 
 function initMap(){
@@ -35,6 +35,18 @@ function initMap(){
 			});
 
 			var marker;
+			
+			// var markers = availableHospitals.map(function(v, i){
+			// 	return new google.maps.Marker({
+			// 		position:new google.maps.LatLng(v.lat, v.lng),
+			// 		label: labelIndex[i % labelIndex.length],
+			// 		title: v.name
+			// 	});
+			// });
+			// var markerCluster = new MarkerClusterer(map, markers, 
+			// 	{
+			// 	imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
 			availableHospitals.forEach(function(v,i){
 				console.log(v)
 				marker = new google.maps.Marker({
@@ -71,6 +83,10 @@ function initMap(){
 }
 
 function updateUI(availableHospitals, map){
+	var link = document.getElementById('list-tab').childNodes;
+	if(link.length >= 2)
+		return;
+	var link = document.getElementsBy
 	availableHospitals.forEach(function(v,i){
 		var link = document.createElement("a");
 		var node = document.createTextNode(v.name);

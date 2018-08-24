@@ -35,6 +35,7 @@ function initMap(){
 			});
 
 			var marker;
+			var markers = [];
 			
 			// var markers = availableHospitals.map(function(v, i){
 			// 	return new google.maps.Marker({
@@ -48,7 +49,6 @@ function initMap(){
 			// 	imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 
 			availableHospitals.forEach(function(v,i){
-				console.log(v)
 				marker = new google.maps.Marker({
 					position: new google.maps.LatLng(v.lat,v.lng),
 					label: labels[labelIndex++ % labels.length],
@@ -64,6 +64,7 @@ function initMap(){
 						infoWindow.open(map, marker);
 					}
 				})(marker,i))
+				markers.push(marker);
 			})
 
 			marker = new google.maps.Marker({
@@ -73,7 +74,7 @@ function initMap(){
 			infoWindow.setPosition(pos);
 			// infoWindow.open(map);
 			map.setCenter(pos);
-			updateUI(availableHospitals, map);
+			updateUI(availableHospitals, map, markers);
 		},function(){
 			handleLocationError(false, infoWindow, map.getCenter());
 		});
@@ -82,11 +83,11 @@ function initMap(){
 	}
 }
 
-function updateUI(availableHospitals, map){
+function updateUI(availableHospitals, map, markers){
 	var link = document.getElementById('list-tab').childNodes;
 	if(link.length >= 2)
 		return;
-	var link = document.getElementsBy
+	// var link = document.getElementsBy
 	availableHospitals.forEach(function(v,i){
 		var link = document.createElement("a");
 		var node = document.createTextNode(v.name);
@@ -106,7 +107,8 @@ function updateUI(availableHospitals, map){
 			lat: availableHospitals[id].lat,
 			lng: availableHospitals[id].lng
 		};
-		map.setCenter(pos);
+		// map.setCenter(pos);
+		toggleBounce(markers[id])
 	})
 }
 
@@ -118,7 +120,14 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos){
 	infoWindow.open(map);
 }
 
-
+function toggleBounce(marker){
+	// if (marker.getAnimation() !== null) {
+ //        marker.setAnimation(null);
+ //    } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+    // }
+	setTimeout(function(){marker.setAnimation(null);}, 750);
+}
 
 function initHospital(){
 	var hospitals = [];
